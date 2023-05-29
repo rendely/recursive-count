@@ -1,9 +1,10 @@
-function recursiveCount(num = 0) {
-  // type your code here
+function recursiveCount(num = 9) {
+  if (num > 0) recursiveCount(num-1);
+  console.log(num);
 }
 
 if (require.main === module) {
-  recursiveCount();
+  recursiveCount(9);
 }
 
 module.exports = recursiveCount;
